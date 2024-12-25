@@ -1,0 +1,1611 @@
+<html lang="en" data-react-helmet="lang">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style data-href="/styles.731ba8619048f236eb0e.css" data-identity="gatsby-global-css">.h1, h1 {
+        font-size: 22px;
+        line-height: 1.4
+    }
+
+    @media (max-width: 768px) {
+        .h1, h1 {
+            font-size: 17px
+        }
+    }
+
+
+    .skills {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .skill {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .skill-text {
+        display: none; /* Скрыто по умолчанию */
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .toggle-btn {
+        background-color: #aaaaaa;
+        color: black;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+        transition: transform 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+        transform: scale(1.1);
+    }
+
+
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        color: #aaa;
+        font-family: sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /*h1 {*/
+    /*    font-size: 2.5rem;*/
+    /*    margin-bottom: 10px;*/
+    /*}*/
+
+    p {
+        font-size: 1rem;
+        color: #aaa;
+        margin-bottom: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #111;
+        border-radius: 8px;
+        padding: 15px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .card img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        border-radius: 8px;
+    }
+
+    .card div {
+        text-align: left;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .container h1{
+        font-size: 1.2rem;
+    }
+
+
+
+
+    .card span {
+        font-size: 1.5rem;
+        color: #aaa;
+        transition: color 0.3s;
+    }
+
+    .card:hover span {
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            font-size: 13px
+        }
+    }
+
+    body ::selection {
+        background: #d2fd78
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none
+    }
+
+    .text-center {
+        text-align: center
+    }
+
+    .link {
+        text-decoration: none
+    }
+
+    .pointer {
+        cursor: pointer
+    }
+
+    .medium {
+        font-size: 17px
+    }
+
+    .large {
+        font-size: 20px
+    }
+
+    .dark {
+        color: rgba(0, 0, 0, .7)
+    }
+
+    .white-space {
+        white-space: break-spaces
+    }
+
+    .m0 {
+        margin: 0
+    }
+
+    .ma {
+        margin: auto
+    }
+
+
+    .mla {
+        margin-left: auto
+    }
+
+    .mra {
+        margin-right: auto
+    }
+
+    .mln1 {
+        margin-left: -1px
+    }
+
+    .ml10 {
+        margin-left: 10px
+    }
+
+    .mr10 {
+        margin-right: 10px
+    }
+
+    .mb20 {
+        margin-bottom: 20px
+    }
+
+    .mb40 {
+        margin-bottom: 40px
+    }
+
+    .mt20 {
+        margin-top: 20px
+    }
+
+    .mt40 {
+        margin-top: 40px
+    }
+
+    .grid {
+        grid-gap: 30px;
+        display: grid;
+        grid-template-columns:repeat(3, 1fr)
+    }
+
+    @media (max-width: 1300px) {
+        .grid {
+            grid-template-columns:repeat(2, 1fr)
+        }
+    }
+
+    @media (max-width: 991px) {
+        .grid {
+            grid-template-columns:repeat(1, 1fr)
+        }
+    }
+
+    .w-100 {
+        width: 100%
+    }
+
+    .w-50 {
+        width: 50%
+    }
+
+    .max-100vw {
+        max-width: 100vw
+    }
+
+    .spacer {
+        height: 100px
+    }
+
+    .p20 {
+        padding: 20px
+    }
+
+    .p30 {
+        padding: 30px
+    }
+
+    @media (max-width: 768px) {
+        .p30 {
+            padding: 20px
+        }
+    }
+
+    .pt0 {
+        padding-top: 0
+    }
+
+    .pl30 {
+        padding-left: 30px
+    }
+
+    .pr30 {
+        padding-right: 30px
+    }
+
+    .flex {
+        display: flex
+    }
+
+    .align-center {
+        align-items: center
+    }
+
+    .gap-20 {
+        gap: 20px
+    }
+
+    .bg-grey {
+        background-color: #f4f3f1
+    }
+
+    .br-5 {
+        border-radius: 5px
+    }
+
+    .overflow-hidden {
+        overflow: hidden
+    }
+
+    .bg-image, div.bg-image {
+        height: 100%;
+        left: 0;
+        position: absolute !important;
+        top: 0;
+        width: 100%
+    }
+
+    .pos-rel {
+        position: relative
+    }
+
+    .ratio-1-1 {
+        padding-top: 100%
+    }
+
+    .ratio-2-1 {
+        padding-top: 62.5%
+    }
+
+    .max-400 {
+        max-width: 400px
+    }
+
+    .max-450 {
+        max-width: 450px
+    }
+
+    .max-550 {
+        max-width: 550px
+    }
+
+    .max-650 {
+        max-width: 525px
+    }
+
+    .max-750 {
+        max-width: 750px
+    }
+
+    @media (max-width: 768px) {
+        .m-gap-10 {
+            gap: 10px
+        }
+
+        .m-p20 {
+            padding: 20px
+        }
+
+        .m-hide {
+            display: none
+        }
+
+        .m-wrap {
+            flex-wrap: wrap
+        }
+
+        .m-m0 {
+            margin: 0
+        }
+
+        .m-100 {
+            width: 100%
+        }
+
+        .m-mt20 {
+            margin-top: 20px
+        }
+
+        .m-mb20 {
+            margin-bottom: 20px
+        }
+    }
+
+    .logo--main {
+        background-image: url('image/logoaqqnoor.png');
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 40px;
+        width: 40px
+    }
+
+    .button.fixed--button {
+        background-color: #fff;
+        bottom: 20px;
+        left: 50%;
+        min-width: 0;
+        opacity: 0;
+        padding: 15px 25px;
+        pointer-events: none;
+        position: fixed;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 10
+    }
+
+    @media (max-width: 768px) {
+        .button.fixed--button {
+            font-size: 12px
+        }
+    }
+
+    .button.fixed--button.active {
+        opacity: 1;
+        pointer-events: all
+    }
+
+    .project .notes {
+        opacity: .5
+    }
+
+    .project .image-container {
+        display: flex;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%
+    }
+
+    .project .image-container .image {
+        background-color: rgba(0, 0, 0, .1);
+        max-width: 70%;
+        width: 100%
+    }
+
+    .with-offline .offline {
+        opacity: 0
+    }
+
+    .with-offline:hover .offline {
+        opacity: 1
+    }
+
+    .with-offline:hover .title {
+        opacity: 0
+    }
+
+    .offline {
+        left: 0;
+        position: absolute;
+        width: 110px
+    }
+
+    .with-links a {
+        position: relative
+    }
+
+    .with-links a:after {
+        background-color: #eee;
+        bottom: -1px;
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100%
+    }
+
+    .with-links a:before {
+        background-color: #fff;
+        bottom: -2px;
+        content: "";
+        height: 5px;
+        left: -100px;
+        position: absolute;
+        transition: left 1s ease;
+        width: 100px;
+        z-index: 2
+    }
+
+    .with-links a:hover:before {
+        left: 100%
+    }
+
+    .all--projects, .introduction .inner, .masthead {
+        opacity: 0
+    }
+
+    .all--projects, .introduction .inner {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px)
+    }
+
+    .hover-zoom .image {
+        box-shadow: 0 5px 15px 0 rgba(90, 50, 40, .15), 0 4px 8px 0 rgba(80, 40, 30, .1);
+        -webkit-transform: translate(0);
+        transform: translate(0);
+        transition: all .4s ease
+    }
+
+    .hover-zoom:hover .image {
+        box-shadow: 0 5px 10px 0 rgba(100, 60, 50, .1), 0 15px 25px 0 rgba(100, 60, 50, .4);
+        -webkit-transform: matrix(1, 0, 0, 1, 0, -10);
+        transform: matrix(1, 0, 0, 1, 0, -10);
+        transition: all .4s ease
+    }
+
+    @media (max-width: 768px) {
+        .hover-zoom:hover .image {
+            box-shadow: 0 5px 15px 0 rgba(90, 50, 40, .15), 0 4px 8px 0 rgba(80, 40, 30, .1);
+            -webkit-transform: translate(0);
+            transform: translate(0)
+        }
+    }
+
+    .will-shake.shake .inner {
+        -webkit-animation: shake .75s ease-in-out;
+        animation: shake .75s ease-in-out
+    }
+
+    @-webkit-keyframes shake {
+        20% {
+            -webkit-transform: translateX(-8px);
+            transform: translateX(-8px)
+        }
+        40% {
+            -webkit-transform: translateX(6px);
+            transform: translateX(6px)
+        }
+        60% {
+            -webkit-transform: translateX(-4px);
+            transform: translateX(-4px)
+        }
+        80% {
+            -webkit-transform: translateX(2px);
+            transform: translateX(2px)
+        }
+        to {
+            -webkit-transform: translateX(0);
+            transform: translateX(0)
+        }
+    }
+
+    @keyframes shake {
+        20% {
+            -webkit-transform: translateX(-8px);
+            transform: translateX(-8px)
+        }
+        40% {
+            -webkit-transform: translateX(6px);
+            transform: translateX(6px)
+        }
+        60% {
+            -webkit-transform: translateX(-4px);
+            transform: translateX(-4px)
+        }
+        80% {
+            -webkit-transform: translateX(2px);
+            transform: translateX(2px)
+        }
+        to {
+            -webkit-transform: translateX(0);
+            transform: translateX(0)
+        }
+    }
+
+    .overlay--bg {
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, .3);
+        cursor: pointer;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        z-index: 100
+    }
+
+    .overlay--bg, .overlay--modal {
+        opacity: 0;
+        pointer-events: none;
+        position: fixed;
+        transition: opacity .4s ease
+    }
+
+    .overlay--modal {
+        background-color: #fff;
+        left: 50%;
+        max-width: 600px;
+        padding: 40px;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: calc(100% - 160px);
+        z-index: 101
+    }
+
+    @media (max-width: 768px) {
+        .overlay--modal {
+            padding: 20px;
+            width: calc(100% - 80px)
+        }
+    }
+
+    body.menu-open .overlay--bg, body.menu-open .overlay--modal.form, body.newsletter-open .overlay--bg, body.newsletter-open .overlay--modal.newsletter {
+        opacity: 1;
+        pointer-events: all
+    }
+
+    .overlay--modal .close {
+        border: 1px solid #ddd;
+        border-radius: 100%;
+        cursor: pointer;
+        height: 15px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transition: background-color .3s ease;
+        width: 15px
+    }
+
+    .overlay--modal .close:hover {
+        background-color: #eee
+    }
+
+    .input {
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: #fdfdfd;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, .8);
+        font-family: sans-serif;
+        font-size: 14px
+    }
+
+    @media (max-width: 768px) {
+        .input {
+            font-size: 13px;
+            padding: 15px
+        }
+    }
+
+    .input:focus {
+        border-color: #ddd;
+        outline: none
+    }
+
+    .input::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, .3)
+    }
+
+    .input::placeholder {
+        color: rgba(0, 0, 0, .3)
+    }
+
+    textarea {
+        min-height: 125px
+    }
+
+    @media (max-width: 768px) {
+        textarea {
+            min-height: 75px
+        }
+    }
+
+    select.input {
+        color: rgba(0, 0, 0, .3)
+    }
+
+    select.input:focus {
+        color: rgba(0, 0, 0, .8)
+    }
+
+    .submit-button {
+        border: none;
+        border-bottom: 1px solid #eee;
+        border-radius: 0;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 5px;
+        transition: border-color .3s ease
+    }
+
+    .submit-button:hover {
+        border-color: rgba(0, 0, 0, .3)
+    }
+
+    .button {
+        border: 1px solid #eee;
+        border-radius: 30px;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        min-width: 100px;
+        padding: 15px 40px;
+        transition: all .3s ease
+    }
+
+    .button:hover {
+        background-color: #f5f5f5;
+        border-color: #e5e5e5
+    }
+
+    .newsletter-input {
+        border-radius: 5px 0 0 5px
+    }
+
+    @media (max-width: 768px) {
+        .newsletter-input {
+            width: calc(100% - 133px)
+        }
+    }
+
+    .newsletter-button {
+        border-color: #eee;
+        border-left: none;
+        border-radius: 0;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-weight: 400;
+        padding: 20px 30px
+    }</style>
+
+    <title>Оразбайқызы Ақнұр | Веб-сайт | Веб-дизайн</title>
+    <style>.gatsby-image-wrapper {
+        position: relative;
+        overflow: hidden
+    }
+
+    .gatsby-image-wrapper picture.object-fit-polyfill {
+        position: static !important
+    }
+
+    .gatsby-image-wrapper img {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        margin: 0;
+        max-width: none;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        object-fit: cover
+    }
+
+    .gatsby-image-wrapper [data-main-image] {
+        opacity: 0;
+        transform: translateZ(0);
+        transition: opacity .25s linear;
+        will-change: opacity
+    }
+
+    .gatsby-image-wrapper-constrained {
+        display: inline-block;
+        vertical-align: top
+    }</style>
+    <noscript>
+        <style>.gatsby-image-wrapper noscript [data-main-image] {
+            opacity: 1 !important
+        }
+
+        .gatsby-image-wrapper [data-placeholder-image] {
+            opacity: 0 !important
+        }</style>
+    </noscript>
+    <script type="module">const e = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+    e && document.body.addEventListener("load", (function (e) {
+        if (void 0 === e.target.dataset.mainImage) return;
+        if (void 0 === e.target.dataset.gatsbyImageSsr) return;
+        const t = e.target;
+        let a = null, n = t;
+        for (; null === a && n;) void 0 !== n.parentNode.dataset.gatsbyImageWrapper && (a = n.parentNode), n = n.parentNode;
+        const o = a.querySelector("[data-placeholder-image]"), r = new Image;
+        r.src = t.currentSrc, r.decode().catch((() => {
+        })).then((() => {
+            t.style.opacity = 1, o && (o.style.opacity = 0, o.style.transition = "opacity 500ms linear")
+        }))
+    }), !0);</script>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="icon" href="/favicon-32x32.png?v=d9beddd1f59fccb1814741ea796d8c5c" type="image/png">
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous">
+    <meta name="theme-color" content="#000">
+    <link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d9beddd1f59fccb1814741ea796d8c5c">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d9beddd1f59fccb1814741ea796d8c5c">
+    <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d9beddd1f59fccb1814741ea796d8c5c">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d9beddd1f59fccb1814741ea796d8c5c">
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d9beddd1f59fccb1814741ea796d8c5c">
+    <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d9beddd1f59fccb1814741ea796d8c5c">
+    <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d9beddd1f59fccb1814741ea796d8c5c">
+    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d9beddd1f59fccb1814741ea796d8c5c">
+    <link as="script" rel="preload" href="/webpack-runtime-82e5978bda26a6616676.js">
+    <link as="script" rel="preload" href="/framework-babc40c697d2ecf845d6.js">
+    <link as="script" rel="preload" href="/app-f4058403abed5c0e0ba2.js">
+    <link as="script" rel="preload" href="/94726e6d-08a298a63cb857fc97c9.js">
+    <link as="script" rel="preload" href="/commons-a2c8d8fcffdb15e45df2.js">
+    <link as="script" rel="preload" href="/component---src-pages-index-js-6261dc0cbd47e2fb0500.js">
+    <link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="anonymous">
+    <link as="fetch" rel="preload" href="/page-data/sq/d/1847422472.json" crossorigin="anonymous">
+    <link as="fetch" rel="preload" href="/page-data/sq/d/3649515864.json" crossorigin="anonymous">
+    <link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous">
+    <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous">
+</head>
+<body>
+<div id="___gatsby">
+    <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+        <header class="p30 flex align-center masthead" style="opacity: 1;"><a aria-current="page" class="link" href="/">
+            <div class="logo--main"></div>
+        </a>
+            <div class="mla flex gap-20 m-gap-10">
+
+                <a href="https://wa.me/77066610524" target="_blank"><img src="image/wp.png" alt="" height="40" width="40"></a>
+               </div>
+        </header>
+
+
+        <div class="overlay--bg" role="presentation"></div>
+        <p class="fixed--button button m0 active" role="presentation"><a href="https://wa.me/77066610524" target="_blank"><img src="image/wp.png" alt="" height="40" width="40"></a></p>
+        <main>
+            <div class="spacer"></div>
+            <div class="introduction p30">
+                <div class="max-750 with-links inner ma text-center h1 "
+                     style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    Оразбайқызы Ақнұр — IT мен дизайн арасындағы байланыстың нүктесі
+                    <br>Instagram:<a
+                        href="https://www.instagram.com/aqqnoordesign/" target="_blank" rel="noreferrer ">(@aqqnoordesign)</a>
+                    <p>
+                        Мен — Еуразия ұлттық университетінің 3-курс студенті, ақпараттық технологиялар мамандығы бойынша оқып жатырмын, сонымен қатар Alem IT мектебінің интенсивті бағдарламасының қатысушысымын. Менің құмарлығым — заманауи және ыңғайлы цифрлық өнімдер жасау, оларды эстетика мен функционалдылықпен үйлестіру.
+
+
+                    <section class="skills">
+                        <h2>Менің дағдыларым</h2>
+                        <div class="skill">
+                            <div class="skill-header">
+                                <h3>JavaScript</h3>
+                                <button class="toggle-btn">+</button>
+                            </div>
+                            <p class="skill-text">Қолданушылардың нақты қажеттіліктерін шешетін интерактивті және бейімделген веб-қосымшаларды әзірлеймін.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-header">
+                                <h3>Figma</h3>
+                                <button class="toggle-btn">+</button>
+                            </div>
+                            <p class="skill-text">Идеяларды жұмыс істейтін прототиптерге айналдыратын жарқын және ойластырылған UI/UX дизайндарын жасаймын.</p>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-header">
+                                <h3>Веб-дизайн және әзірлеу</h3>
+                                <button class="toggle-btn">+</button>
+                            </div>
+                            <p class="skill-text">Сайттарды толық циклмен жасаймын — дизайннан бастап, соңғы нұсқаға дейін.</p>
+                        </div>
+                    <p>Мен ағылшын тілін еркін меңгергенмін, бұл мені халықаралық жобаларда жұмыс істеуге және соңғы IT трендтерінен хабардар болуға мүмкіндік береді.
+                        Егер сіз заманауи, стильді және функционалды жобаларды жасай алатын маман іздесеңіз, мен сіздің мінсіз серіктесіңіз болуға дайынмын.</p>
+
+                </section>
+
+
+
+                </div>
+            </div>
+            <div class="spacer"></div>
+
+            <div class="all--projects p30 grid active"
+                 style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><a
+                    href="https://aqqnoor.github.io/cookies/" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:2736px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/maincookie.png"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLFQoLDhUWDhEVDhcVGhEkHhYZHSIVGhkmHysvJh0oHRoaJDUlLi0vMjIyHSI4PTcwPCsxMi8BCgsLDg0OEA0OFy8dFhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAA8AGAMBIgACEQEDEQH/xAAYAAACAwAAAAAAAAAAAAAAAAAABwQFBv/EACAQAAAGAgIDAAAAAAAAAAAAAAABAgMEEQeRIzESISL/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMZOgQVs+lCnUxEjpqw5TxM2aaN8tiLJw6yquUthJQyGI6mPKwBuTsRMNQvl0rLsAk//2Q=="
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 2736px) 2736px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/maincookie.png"
+                                                             srcset="image/maincookie.png 2736w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 2736px) 2736px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1704246398-download-1.jpg?auto=format&amp;w=2736"
+                                                           srcSet="https://www.datocms-assets.com/54179/1704246398-download-1.jpg?auto=format&amp;dpr=0.25&amp;w=2736 684w,https://www.datocms-assets.com/54179/1704246398-download-1.jpg?auto=format&amp;dpr=0.5&amp;w=2736 1368w,https://www.datocms-assets.com/54179/1704246398-download-1.jpg?auto=format&amp;w=2736 2736w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Trendy cookies</p>
+                        <p class="m0 mla notes">Веб-сайт</p></div>
+                </div>
+            </a><a href="https://aqqnoor.github.io/togzhanphotograph/" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1440px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/togzhan.png"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/togzhan.png"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/togzhan.png"
+                                                             srcset="image/togzhan.png 1440w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1674976887-download-4.jpg?auto=format&amp;w=1440"
+                                                           srcSet="https://www.datocms-assets.com/54179/1674976887-download-4.jpg?auto=format&amp;dpr=0.25&amp;w=1440 360w,https://www.datocms-assets.com/54179/1674976887-download-4.jpg?auto=format&amp;dpr=0.5&amp;w=1440 720w,https://www.datocms-assets.com/54179/1674976887-download-4.jpg?auto=format&amp;w=1440 1440w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Togzhan Uisynbaeva</p>
+                        <p class="m0 mla notes">Веб-сайт</p></div>
+                </div>
+            </a><a href="animator.html" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1440px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/animatormain.jpg"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/animatormain.jpg"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/animatormain.jpg"
+                                                             srcset="image/animatormain.jpg 360w,image/animatormain.jpg 720w,image/animatormain.jpg 1440w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1674976693-download.jpg?auto=format&amp;w=1440"
+                                                           srcSet="https://www.datocms-assets.com/54179/1674976693-download.jpg?auto=format&amp;dpr=0.25&amp;w=1440 360w,https://www.datocms-assets.com/54179/1674976693-download.jpg?auto=format&amp;dpr=0.5&amp;w=1440 720w,https://www.datocms-assets.com/54179/1674976693-download.jpg?auto=format&amp;w=1440 1440w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Жаңабай Сақтағанұлы</p>
+                        <p class="m0 mla notes">Дизайн</p></div>
+                </div>
+            </a><a href="lawyer.html" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1440px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/lawyer.jpg"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/lawyer.jpg"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/lawyer.jpg"
+                                                             srcset="image/lawyer.jpg 1440w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1674976855-download-3.jpg?auto=format&amp;w=1440"
+                                                           srcSet="https://www.datocms-assets.com/54179/1674976855-download-3.jpg?auto=format&amp;dpr=0.25&amp;w=1440 360w,https://www.datocms-assets.com/54179/1674976855-download-3.jpg?auto=format&amp;dpr=0.5&amp;w=1440 720w,https://www.datocms-assets.com/54179/1674976855-download-3.jpg?auto=format&amp;w=1440 1440w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Дүйсенғали Мухамедияр</p>
+                        <p class="m0 mla notes">Дизайн</p></div>
+                </div>
+            </a><a href="business.html" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1440px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/businessmIN.png"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/businessmIN.png"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/businessmIN.png"
+                                                             srcset="image/businessmIN.png 1440w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1692336697-download-2.jpg?auto=format&amp;w=1440"
+                                                           srcSet="https://www.datocms-assets.com/54179/1692336697-download-2.jpg?auto=format&amp;dpr=0.25&amp;w=1440 360w,https://www.datocms-assets.com/54179/1692336697-download-2.jpg?auto=format&amp;dpr=0.5&amp;w=1440 720w,https://www.datocms-assets.com/54179/1692336697-download-2.jpg?auto=format&amp;w=1440 1440w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Ұлан Құрманғалиев &amp; Жандос Жолтай  </p>
+                        <p class="m0 mla notes">Дизайн</p></div>
+                </div>
+            </a><a href="tender.html" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1440px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/tendertwo.jpg"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/tendertwo.jpg"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/tendertwo.jpg"
+                                                             srcset="image/tendertwo.jpg 1440w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1674976757-download-1.jpg?auto=format&amp;w=1440"
+                                                           srcSet="https://www.datocms-assets.com/54179/1674976757-download-1.jpg?auto=format&amp;dpr=0.25&amp;w=1440 360w,https://www.datocms-assets.com/54179/1674976757-download-1.jpg?auto=format&amp;dpr=0.5&amp;w=1440 720w,https://www.datocms-assets.com/54179/1674976757-download-1.jpg?auto=format&amp;w=1440 1440w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Бақытжан Кемалхан</p>
+                        <p class="m0 mla notes">Дизайн</p></div>
+                </div>
+            </a><a href="bootcamp.html" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1440px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/bootcampmain.png"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/bootcampmain.png"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/bootcampmain.png"
+                                                             srcset="image/bootcampmain.png 1440w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1722905055-download-1.jpg?auto=format&amp;w=1440"
+                                                           srcSet="https://www.datocms-assets.com/54179/1722905055-download-1.jpg?auto=format&amp;dpr=0.25&amp;w=1440 360w,https://www.datocms-assets.com/54179/1722905055-download-1.jpg?auto=format&amp;dpr=0.5&amp;w=1440 720w,https://www.datocms-assets.com/54179/1722905055-download-1.jpg?auto=format&amp;w=1440 1440w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Бақытбай Сабырбеков</p>
+                        <p class="m0 mla notes">Дизайн</p></div>
+                </div>
+            </a><a href="englishtutor.html" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1440px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/englishtutormain.png"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/englishtutormain.png"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/englishtutormain.png"
+                                                             srcset="image/englishtutormain.png 1440w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1692337283-download-6.jpg?auto=format&amp;w=1440"
+                                                           srcSet="https://www.datocms-assets.com/54179/1692337283-download-6.jpg?auto=format&amp;dpr=0.25&amp;w=1440 360w,https://www.datocms-assets.com/54179/1692337283-download-6.jpg?auto=format&amp;dpr=0.5&amp;w=1440 720w,https://www.datocms-assets.com/54179/1692337283-download-6.jpg?auto=format&amp;w=1440 1440w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Аяулым Түзелбек</p>
+                        <p class="m0 mla notes">Дизайн</p></div>
+                </div>
+            </a><a href="lawyer.html" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:2736px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/lawyermain.png"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/lawyermain.png"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 2736px) 2736px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/lawyermain.png"
+                                                             srcset="image/lawyermain.png 2736w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 2736px) 2736px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1704246647-download-2.jpg?auto=format&amp;w=2736"
+                                                           srcSet="https://www.datocms-assets.com/54179/1704246647-download-2.jpg?auto=format&amp;dpr=0.25&amp;w=2736 684w,https://www.datocms-assets.com/54179/1704246647-download-2.jpg?auto=format&amp;dpr=0.5&amp;w=2736 1368w,https://www.datocms-assets.com/54179/1704246647-download-2.jpg?auto=format&amp;w=2736 2736w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Дүйсенғали Мухамедияр</p>
+                        <p class="m0 mla notes">Дизайн</p></div>
+                </div>
+            </a><a href="tender1.html" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1440px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/tenderonemain.png"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/tenderonemain.png"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/tenderonemain.png"
+                                                             srcset="image/tenderonemain.png 1440w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1708917772-download-4.jpg?auto=format&amp;w=1440"
+                                                           srcSet="https://www.datocms-assets.com/54179/1708917772-download-4.jpg?auto=format&amp;dpr=0.25&amp;w=1440 360w,https://www.datocms-assets.com/54179/1708917772-download-4.jpg?auto=format&amp;dpr=0.5&amp;w=1440 720w,https://www.datocms-assets.com/54179/1708917772-download-4.jpg?auto=format&amp;w=1440 1440w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Бақытжан Кемалхан</p>
+                        <p class="m0 mla notes">Дизайн</p></div>
+                </div>
+            </a><a href="https://aqqnoor.github.io/wedaler/" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1440px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/wedaler.png"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/wedaler.png"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/wedaler.png"
+                                                             srcset="image/wedaler.png 1440w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1440px) 1440px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1674977222-download-8.jpg?auto=format&amp;w=1440"
+                                                           srcSet="https://www.datocms-assets.com/54179/1674977222-download-8.jpg?auto=format&amp;dpr=0.25&amp;w=1440 360w,https://www.datocms-assets.com/54179/1674977222-download-8.jpg?auto=format&amp;dpr=0.5&amp;w=1440 720w,https://www.datocms-assets.com/54179/1674977222-download-8.jpg?auto=format&amp;w=1440 1440w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">Алмаз &amp; Ерке</p>
+                        <p class="m0 mla notes">Той шақыру сайты</p></div>
+                </div>
+            </a>
+                <a href="https://merey-sad.kz/ru" target="_blank" rel="noreferrer" class="link">
+                <div class="project bg-grey br-5 hover-zoom pointer">
+                    <div class="ratio-1-1 pos-rel">
+                        <div class="image-container">
+                            <div class="w-100 ma inner">
+                                <div class="ma image br-5 overflow-hidden">
+                                    <div class="ratio-2-1 pos-rel image-internal">
+                                        <div data-gatsby-image-wrapper=""
+                                             class="gatsby-image-wrapper gatsby-image-wrapper-constrained bg-image">
+                                            <div style="max-width:1728px;display:block"><img alt="" role="presentation"
+                                                                                             aria-hidden="true"
+                                                                                             src="image/search.png"
+                                                                                             style="max-width:100%;display:block;position:static">
+                                            </div>
+                                            <img aria-hidden="true" data-placeholder-image=""
+                                                 style="opacity: 0; transition: opacity 500ms linear;" decoding="async"
+                                                 src="image/search.png"
+                                                 alt=""><img data-gatsby-image-ssr="" data-main-image=""
+                                                             style="opacity: 1;"
+                                                             sizes="(min-width: 1728px) 1728px, 100vw" decoding="async"
+                                                             loading="lazy" alt="Gallery Image"
+                                                             src="image/search.png"
+                                                             srcset="image/search.png 1728w">
+                                            <noscript><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0"
+                                                           sizes="(min-width: 1728px) 1728px, 100vw" decoding="async"
+                                                           loading="lazy"
+                                                           src="https://www.datocms-assets.com/54179/1718069470-macbook-pro-16-1-4.jpg?auto=format&amp;w=1728"
+                                                           srcSet="https://www.datocms-assets.com/54179/1718069470-macbook-pro-16-1-4.jpg?auto=format&amp;dpr=0.25&amp;w=1728 432w,https://www.datocms-assets.com/54179/1718069470-macbook-pro-16-1-4.jpg?auto=format&amp;dpr=0.5&amp;w=1728 864w,https://www.datocms-assets.com/54179/1718069470-macbook-pro-16-1-4.jpg?auto=format&amp;w=1728 1728w"
+                                                           alt="Gallery Image"/></noscript>
+                                            <script type="module">const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
+                                            if (t) {
+                                                const t = document.querySelectorAll("img[data-main-image]");
+                                                for (let e of t) {
+                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
+                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
+                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
+                                                    e.complete && (e.style.opacity = 1)
+                                                }
+                                            }</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information p20 pt0 flex"><p class="m0 pos-rel">"Мерей" балабақшасы</p>
+                        <p class="m0 mla notes">Дизайн</p></div>
+                </div>
+            </a>
+                </div>
+
+            <div class="spacer"></div>
+            <div class="p30 fade--in"><p class="text-center m0 max-550 ma"> Кәсіби веб-сайттарды, дизайнды толық дайын күйде жасау!<br> Өтініш қалдырыңыз және тегін кеңес алыңыз.</p></div>
+            <div class="spacer"></div>
+            <div class="container">
+                <h1>Менің қолданатын қосымшаларым</h1>
+                <div class="grid">
+                    <div class="card bg-grey">
+                        <img src="image/figmalogo.webp" alt="Figma Logo">
+                        <div>
+                            <h2>Figma</h2>
+                        </div>
+                        <a href="https://www.figma.com/"><span>&rarr;</span></a>
+
+                    </div>
+                    <div class="card bg-grey">
+                        <img src="image/htmllogo.webp" alt="html Logo">
+                        <div>
+                            <h2>Html</h2>
+                        </div>
+                        <a href="https://www.w3schools.com/html/Default.asp"><span>&rarr;</span></a>
+
+                    </div>
+                    <div class="card bg-grey">
+                        <img src="image/csslogo.webp" alt="css Logo">
+                        <div>
+                            <h2>Css</h2>
+                        </div>
+                        <a href="https://www.w3schools.com/css/default.asp"><span>&rarr; </span></a>
+
+                    </div>
+                    <div class="card bg-grey">
+                        <img src="image/jslogo.webp" alt="js Logo">
+                        <div>
+                            <h2>Javascript</h2>
+                        </div>
+                        <a href="https://www.w3schools.com/js/default.asp"><span>&rarr;</span></a>
+
+                    </div>
+                    <div class="card bg-grey">
+                        <img src="image/tildalogo.webp" alt="tilda Logo">
+                        <div>
+                            <h2>Tilda</h2>
+                        </div>
+                        <a href="https://tilda.cc/ru/"><span>&rarr;</span></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="p20 pl30 pr30 flex m-p20"><p class="m0  ">© <!-- -->2024<!-- --> | AQQNOOR</p></footer>
+    </div>
+    <div id="gatsby-announcer"
+         style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0"
+         aria-live="assertive" aria-atomic="true"></div>
+</div>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WXNNH81CWE"></script>
+<script>
+
+
+    if (true) {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            window.dataLayer && window.dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-WXNNH81CWE', {"send_page_view": false});
+    }
+</script>
+<script id="gatsby-script-loader">/*<![CDATA[*/
+window.pagePath = "/";/*]]>*/</script>
+<script id="gatsby-chunk-mapping">/*<![CDATA[*/
+window.___chunkMapping = {
+    "polyfill": ["/polyfill-3b469c48e0bcd268385d.js"],
+    "app": ["/app-f4058403abed5c0e0ba2.js"],
+    "component---src-pages-404-js": ["/component---src-pages-404-js-5327ba55f5c55de0b167.js"],
+    "component---src-pages-admin-js": ["/component---src-pages-admin-js-263ba9d4aeb3e56a8884.js"],
+    "component---src-pages-index-js": ["/component---src-pages-index-js-6261dc0cbd47e2fb0500.js"]
+};/*]]>*/</script>
+<script src="/polyfill-3b469c48e0bcd268385d.js" nomodule=""></script>
+<script src="/component---src-pages-index-js-6261dc0cbd47e2fb0500.js" async=""></script>
+<script src="/commons-a2c8d8fcffdb15e45df2.js" async=""></script>
+<script src="/94726e6d-08a298a63cb857fc97c9.js" async=""></script>
+<script src="/app-f4058403abed5c0e0ba2.js" async=""></script>
+<script src="/framework-babc40c697d2ecf845d6.js" async=""></script>
+<script src="/webpack-runtime-82e5978bda26a6616676.js" async=""></script>
+<script>
+    const scrollContainer = document.querySelector('.horizontal-scroll');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+scrollContainer.addEventListener('mousedown', (e) => {
+    isDown = true;
+    scrollContainer.classList.add('active');
+    startX = e.pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
+});
+
+scrollContainer.addEventListener('mouseleave', () => {
+    isDown = false;
+    scrollContainer.classList.remove('active');
+});
+
+scrollContainer.addEventListener('mouseup', () => {
+    isDown = false;
+    scrollContainer.classList.remove('active');
+});
+
+scrollContainer.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2; // Коэффициент скорости прокрутки
+    scrollContainer.scrollLeft = scrollLeft - walk;
+});
+</script>
+<script>// Выбираем все кнопки "toggle-btn"
+document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        const skillText = this.parentElement.nextElementSibling; // Ищем следующий элемент (текст навыка)
+
+        // Переключение видимости текста
+        if (skillText.style.display === 'none' || skillText.style.display === '') {
+            skillText.style.display = 'block';
+            this.textContent = '×'; // Меняем плюсик на икс
+        } else {
+            skillText.style.display = 'none';
+            this.textContent = '+'; // Меняем икс на плюсик
+        }
+    });
+});
+
+</script>
+<script>
+    let touchStartX = 0;
+
+scrollContainer.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+});
+
+scrollContainer.addEventListener('touchmove', (e) => {
+    const touchX = e.touches[0].clientX;
+    const walk = (touchStartX - touchX) * 2; // Ускорение прокрутки
+    scrollContainer.scrollLeft += walk;
+});
+</script>
+</body>
+</html>
